@@ -63,10 +63,9 @@ export default function Categorias() {
             <tr>
               <th className="border text-black px-4 py-2 text-left">ID</th>
               <th className="border text-black px-4 py-2 text-left">Nombre</th>
-              <th className="border text-black px-4 py-2 text-left">Slug</th>
               <th className="border text-black px-4 py-2 text-left">Imagen</th>
-              <th className="border text-black px-4 py-2 text-left">Fecha creción</th>
-              <th className="border text-black px-4 py-2 text-left">Fecha modicación</th>
+              <th className="border text-black px-4 py-2 text-left">Fecha creación</th>
+              <th className="border text-black px-4 py-2 text-left">Fecha modificación</th>
             </tr>
           </thead>
           <tbody>
@@ -74,7 +73,6 @@ export default function Categorias() {
               <tr key={cat.id} className="hover:bg-gray-100">
                 <td className="border text-black px-4 py-2">{cat.id}</td>
                 <td className="border text-black px-4 py-2">{cat.name}</td>
-                <td className="border text-black px-4 py-2">{cat.slug}</td>
                 <td className="border text-black px-4 py-2">
                   <img src={cat.image} alt={cat.name} className="h-12 w-12 object-cover rounded" />
                 </td>
